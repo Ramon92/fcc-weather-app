@@ -4,8 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dark-sky-api": "^0.5.28",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-weathericons": "^1.0.3"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
