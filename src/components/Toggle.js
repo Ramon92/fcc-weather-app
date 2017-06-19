@@ -2,9 +2,7 @@ import React from 'react';
 
 function Toggle(props) {
     return (
-        <div>
-            <button onClick={() => props.toggleDegrees()}></button>
-        </div>
+        <button onClick={props.toggleDegrees}>switch temp</button>
     );
 }
 
