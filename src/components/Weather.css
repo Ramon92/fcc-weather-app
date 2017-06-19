@@ -1,0 +1,63 @@
+.Weather {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes spin-icon {
+    0%, 42%, 100% {
+        transform: scale(1);
+    }
+    21% {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+.Weather i {
+    animation: spin-icon 2.5s ease-out infinite;
+    color: rgba(255, 191, 105, 1);
+    text-shadow: 0 0 40px rgba(255, 159, 28, 1);
+    margin-bottom: 40px;
+}
+
+.Weather .iWrapper {
+    animation: wave 5s ease infinite;
+}
+
+.Weather p {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.Weather button {
+    background-color: #CBF3F0;
+    border: none;
+    font-size: 1.4em;
+    color: #7c7c7c;
+    padding: 20px 40px;
+    border-radius: 6px;
+    box-shadow: #53726f 8px 15px 15px 2px;
+}
+
+.Weather button:hover {
+    background-color: #F4FAFF;
+    box-shadow: #53726f 4px 7px 15px 2px;
+}
+
+.Weather button:focus {
+    outline: none;
+    border: #FFBF69 2px solid;
+}
